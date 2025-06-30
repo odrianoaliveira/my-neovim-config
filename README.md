@@ -1,4 +1,4 @@
-**my-neovim-config**
+# ⚙️ My Neovim Config
 
 This repository contains my Neovim configuration, organized into modules for easy maintenance.
 
