@@ -2,23 +2,20 @@
 
 This repository contains my Neovim configuration, organized into modules for easy maintenance.
 
+## Requisites
+
+- [ripgrep](https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation)
+
 ## Folder Structure
 
 ```
 my-neovim-config/
-├── nvim/                  # Neovim configuration (XDG-compliant)
-│   ├── init.lua           # Main entry point
-│   ├── lazy-lock.json     # Lockfile for pinned versions (lazy.nvim)
-│   └── lua/               # Lua scripts organized by responsibility
-│       ├── plugins/       # Individual plugin configurations
-│       │   ├── catppuccin.lua        # Catppuccin color scheme
-│       │   ├── fugitive.lua          # Git integration (vim-fugitive)
-│       │   ├── lsp.config.lua        # LSP and autocompletion setup
-│       │   ├── neo-tree.lua          # File explorer (neo-tree.nvim)
-│       │   ├── nvim-web-devicons.lua # File icons (nvim-web-devicons)
-│       │   ├── telescope.lua         # Fuzzy finder (telescope.nvim)
-│       │   ├── treesitter.lua        # Syntax highlighting (nvim-treesitter)
-│       │   └── undotree.lua          # Edit history explorer (undotree)
+├── nvim/                    # Neovim configuration (XDG-compliant)
+│   ├── init.lua             # Main entry point
+│   ├── lazy-lock.json       # Lockfile for pinned versions (lazy.nvim)
+│   └── lua/                 # Lua scripts organized by responsibility
+│       ├── plugins/         # Individual plugin configurations
+│       │   ├── ***.lua      # plugin config
 │       ├── remap.lua        # Custom key mappings
 │       └── vim-options.lua  # Editor options (indentation, line numbers, etc.)
 ```
