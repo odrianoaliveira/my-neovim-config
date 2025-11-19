@@ -18,14 +18,15 @@ return {
     config = function()
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-      local lspconfig = require("lspconfig");
-      lspconfig.lua_ls.setup({
+      vim.lsp.config("lua_ls", {
         capabilities = capabilities
       })
-      lspconfig.ts_ls.setup({
+
+      vim.lsp.config("ts_ls", {
         capabilities = capabilities
       })
-      lspconfig.gopls.setup({
+
+      vim.lsp.config("go_ls", {
         capabilities = capabilities
       })
 
